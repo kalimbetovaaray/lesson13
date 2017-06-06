@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Глобальные и локальные переменные</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<script type="text/javascript">
+		var global = 15;
+		var i = 10;
+		function myFunc() {
+			var i = 5;
+			global++;
+			i++;
+		}
+		alert("До вызова global = " + global + ", i = " + i);
+		myFunc();
+		alert("После вызова функции global = " + global + ", i = " + i);
+	</script>
+</body>
+</html>
